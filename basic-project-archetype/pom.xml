@@ -5,7 +5,7 @@
 
 	<groupId>com.hartveld.archetypes</groupId>
 	<artifactId>basic-project-archetype</artifactId>
-	<version>0.1</version>
+	<version>0.2-SNAPSHOT</version>
 	<packaging>maven-archetype</packaging>
 	<name>Basic project archetype</name>
 
