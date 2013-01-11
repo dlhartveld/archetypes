@@ -8,7 +8,7 @@
 		<fileSet>
 			<directory>src</directory>
 			<includes>
-				<include>**/*.java</include>
+				<include>**/*.*</include>
 			</includes>
 		</fileSet>
 	</fileSets>
