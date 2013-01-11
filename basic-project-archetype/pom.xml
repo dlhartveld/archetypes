@@ -1,0 +1,59 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.hartveld.archetypes</groupId>
+	<artifactId>basic-project-archetype</artifactId>
+	<version>0.1-SNAPSHOT</version>
+	<packaging>maven-archetype</packaging>
+	<name>Basic project archetype</name>
+
+	<properties>
+		<version.java>1.7</version.java>
+		<version.maven>3.0.4</version.maven>
+
+		<version.plugin.compiler.java>3.0</version.plugin.compiler.java>
+
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<prerequisites>
+		<maven>${version.maven}</maven>
+	</prerequisites>
+
+	<build>
+
+		<plugins>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${version.plugin.compiler.java}</version>
+				<configuration>
+					<source>${version.java}</source>
+					<target>${version.java}</target>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-archetype-plugin</artifactId>
+				<version>2.2</version>
+			</plugin>
+
+		</plugins>
+
+		<extensions>
+
+			<extension>
+				<groupId>org.apache.maven.archetype</groupId>
+				<artifactId>archetype-packaging</artifactId>
+				<version>2.2</version>
+			</extension>
+
+		</extensions>
+
+	</build>
+
+</project>
