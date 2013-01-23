@@ -7,7 +7,6 @@
 	<artifactId>${artifactId}</artifactId>
 	<version>${version}</version>
 	<packaging>jar</packaging>
-	<name>Basic project archetype</name>
 
 	<properties>
 		<version.java>1.7</version.java>
