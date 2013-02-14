@@ -1,0 +1,68 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.hartveld.archetypes</groupId>
+	<artifactId>archetypes-parent</artifactId>
+	<version>0.3-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>Hartveld.COM - Archetypes - Parent POM</name>
+
+	<properties>
+		<version.java>1.7</version.java>
+		<version.maven>3.0.4</version.maven>
+
+		<version.plugin.compiler.java>3.0</version.plugin.compiler.java>
+		<version.plugin.archetype>2.2</version.plugin.archetype>
+
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<modules>
+		<module>basic</module>
+	</modules>
+	
+	<prerequisites>
+		<maven>${version.maven}</maven>
+	</prerequisites>
+
+	<build>
+
+		<pluginManagement>
+
+			<plugins>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>${version.plugin.compiler.java}</version>
+					<configuration>
+						<source>${version.java}</source>
+						<target>${version.java}</target>
+					</configuration>
+				</plugin>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-archetype-plugin</artifactId>
+					<version>${version.plugin.archetype}</version>
+				</plugin>
+
+			</plugins>
+
+		</pluginManagement>
+
+		<extensions>
+
+			<extension>
+				<groupId>org.apache.maven.archetype</groupId>
+				<artifactId>archetype-packaging</artifactId>
+				<version>${version.plugin.archetype}</version>
+			</extension>
+
+		</extensions>
+
+	</build>
+
+</project>

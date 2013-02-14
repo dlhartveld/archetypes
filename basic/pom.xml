@@ -3,24 +3,15 @@
 
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.hartveld.archetypes</groupId>
+	<parent>
+		<groupId>com.hartveld.archetypes</groupId>
+		<artifactId>archetypes-parent</artifactId>
+		<version>0.3-SNAPSHOT</version>
+	</parent>
+
 	<artifactId>basic-project-archetype</artifactId>
-	<version>0.3-SNAPSHOT</version>
 	<packaging>maven-archetype</packaging>
-	<name>Basic project archetype</name>
-
-	<properties>
-		<version.java>1.7</version.java>
-		<version.maven>3.0.4</version.maven>
-
-		<version.plugin.compiler.java>3.0</version.plugin.compiler.java>
-
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
-
-	<prerequisites>
-		<maven>${version.maven}</maven>
-	</prerequisites>
+	<name>Hartveld.COM - Archetypes - Basic project</name>
 
 	<build>
 
@@ -29,17 +20,11 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>${version.plugin.compiler.java}</version>
-				<configuration>
-					<source>${version.java}</source>
-					<target>${version.java}</target>
-				</configuration>
 			</plugin>
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-archetype-plugin</artifactId>
-				<version>2.2</version>
 			</plugin>
 
 		</plugins>
@@ -49,7 +34,6 @@
 			<extension>
 				<groupId>org.apache.maven.archetype</groupId>
 				<artifactId>archetype-packaging</artifactId>
-				<version>2.2</version>
 			</extension>
 
 		</extensions>
