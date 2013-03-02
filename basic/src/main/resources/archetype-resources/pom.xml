@@ -14,7 +14,7 @@
 
 		<version.dep.slf4j>1.7.2</version.dep.slf4j>
 		<version.dep.logback>1.0.9</version.dep.logback>
-		<version.dep.guava>13.0.1</version.dep.guava>
+		<version.dep.guava>14.0</version.dep.guava>
 		<version.dep.apache.commons-lang>2.6</version.dep.apache.commons-lang>
 		<version.dep.apache.commons-lang3>3.1</version.dep.apache.commons-lang3>
 
