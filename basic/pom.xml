@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>com.hartveld.archetypes</groupId>
 		<artifactId>archetypes-parent</artifactId>
-		<version>0.3</version>
+		<version>0.4-SNAPSHOT</version>
 	</parent>
 
 	<artifactId>basic-project-archetype</artifactId>
