@@ -29,7 +29,7 @@
 
 	<groupId>com.hartveld.archetypes</groupId>
 	<artifactId>com.hartveld.archetypes.parent</artifactId>
-	<version>1</version>
+	<version>2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Hartveld.COM - Archetypes - Parent POM</name>
 
