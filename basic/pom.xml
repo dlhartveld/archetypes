@@ -30,7 +30,7 @@
 	<parent>
 		<groupId>com.hartveld.archetypes</groupId>
 		<artifactId>com.hartveld.archetypes.parent</artifactId>
-		<version>1-SNAPSHOT</version>
+		<version>1</version>
 	</parent>
 
 	<artifactId>com.hartveld.archetypes.basic</artifactId>
